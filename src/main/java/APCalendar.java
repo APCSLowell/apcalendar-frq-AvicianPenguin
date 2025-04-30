@@ -58,6 +58,6 @@ public class APCalendar
   {
     int nthDay = dayOfYear(month, day, year);
     int firstDay = firstDayOfYear(year);
-    return((firstDay%7)+nthDay);
+    return((firstDay+nthDay-1)%7);
   }
 }
